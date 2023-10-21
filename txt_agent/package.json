@@ -1,0 +1,20 @@
+{
+  "name": "txt_agent",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "postinstall": "bunx @puppeteer/browsers install chrome@stable --path $HOME/.cache/puppeteer",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bun run game_scrapper.ts"
+  },
+  "dependencies": {
+    "chromium": "^3.0.3",
+    "puppeteer": "^21.4.0"
+  }
+}
